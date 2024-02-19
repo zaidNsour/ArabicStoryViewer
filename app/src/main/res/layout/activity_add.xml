@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#36454F"
+    android:layout_weight="1"
+    tools:context=".Activity_add">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="اضافة قصة جديدة"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="	#EDEADE"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15sp"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="العنوان"
+        android:textSize="28sp"
+        android:textColor="#EDEADE"
+        android:textColorHint="#B2BEB5"
+        android:gravity="right"
+        android:layout_marginBottom="5sp"
+        android:layout_marginRight="10sp"
+        android:background="@android:color/transparent"
+        android:id="@+id/et_add_title"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg2"
+        android:orientation="vertical"
+        android:layout_marginBottom="15sp"
+        android:layout_weight="1"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:textSize="22sp"
+            android:inputType="textMultiLine"
+            android:id="@+id/et_add_content"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:layout_gravity="right"
+        android:layout_marginRight="10sp"
+        android:src="@drawable/yes"
+        android:id="@+id/iv_yes"
+        />
+
+
+</LinearLayout>
